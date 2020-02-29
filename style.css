@@ -1,0 +1,116 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    color: #333;
+    background-color: aliceblue !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: steelblue;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 12%;
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0 10vw 0 0 !important;
+    padding: 0;
+}
+
+li:not(:last-child) {
+    margin-right: 1.6rem;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+section {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    padding-top: 24vmax;
+    margin-top: -12vmax;
+}
+
+p {
+    text-align: justify;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 0.35rem 0.35rem;
+    padding-top: 12vmax;
+    margin-top: -7vmax;
+}
+
+.frame {
+    background-color: lightblue;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8vmax;
+    margin-top: -1vmax;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input, textarea {
+    border: none;
+    width: 25vw;
+}
+
+#map {
+    background-color: white;
+    width: 20vw;
+    height: 32vw;
+}
+
+footer {
+    background-color: steelblue;
+    width: 100%;
+    height: 10%;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
