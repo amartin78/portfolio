@@ -58,10 +58,16 @@ $(document).ready(function () {
                                       : `https:${o2[0]}.herokuapp.com`;
             let alt_text = i < 3 ? o2.split('-').map(c => c[0].toUpperCase() + c.slice(1)).join(' ')
                                  : o2[1];
+            let img1 = `images/${o1['route']}/`
+            let img2 = `img-${j+1}.png`
+            img = (i === 10 && j === 0) ? `${img1}sm/${img2}`
+                                       : `${img1}${img2}`
+
+            console.log('img ', img)
 
             c +=    `<div class="carousel-item ${state}">` +
                         `<a href="${link}/" target="_blank">` + 
-                            `<img src="images/${o1['route']}/img-${j+1}.png" class="d-block w-100" alt="${alt_text}"/>` + 
+                            `<img src=${img} class="d-block w-100" alt="${alt_text}"/>` + 
                         `</a>` +
                     `</div>`;
         });
