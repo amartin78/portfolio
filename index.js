@@ -63,7 +63,7 @@ $(document).ready(function () {
             img = (i === 10 && j === 0) ? `${img1}sm/${img2}`
                                        : `${img1}${img2}`
 
-            console.log('img ', img)
+            // console.log('img ', img)
 
             c +=    `<div class="carousel-item ${state}">` +
                         `<a href="${link}/" target="_blank">` + 
