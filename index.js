@@ -38,8 +38,9 @@ $(document).ready(function () {
             route: 'other',
             label: 'Other Projects',
             links: [
-                ['theadventuretraveller','The Adventure Traveller'], 
-                ['carehome-app-test', 'Carehome App']
+                ['tabla-facturas-json', 'Tabla facturas']
+                // ['theadventuretraveller','The Adventure Traveller'], 
+                // ['carehome-app-test', 'Carehome App']
             ]
         },
     ]
