@@ -54,9 +54,14 @@ $(document).ready(function () {
         o1['links'].forEach((o2, j) => {
 
             let state = j === 0 ? 'active' : '';
+
+            // let link =  i < 3 ? `https://amartin78.github.io/fcc-${o2}` 
+            //                   : i < 5 ? `https://${o2[0]}.glitch.me` 
+            //                           : `https:${o2[0]}`;
+
             let link =  i < 3 ? `https://amartin78.github.io/fcc-${o2}` 
                               : i < 5 ? `https://${o2[0]}.glitch.me` 
-                                      : `https:${o2[0]}.herokuapp.com`;
+                                      : `https://amartin78.github.io/${o2[0]}`;
             let alt_text = i < 3 ? o2.split('-').map(c => c[0].toUpperCase() + c.slice(1)).join(' ')
                                  : o2[1];
             let img1 = `images/${o1['route']}/`
@@ -77,7 +82,7 @@ $(document).ready(function () {
                         `<p>${o1['label']}</p>` +
                     `</div>`;
 
-        if (i !== 4 || i !== 5) {
+        if (i !== 4 && i !== 5) {
             c   +=      `<a class="carousel-control-prev" href="#carouselSlide${i+1}" role="button" data-slide="prev">` +
                             `<span class="carousel-control-prev-icon" aria-hidden="true"></span>` +
                             `<span class="sr-only">Previous</span>` +
