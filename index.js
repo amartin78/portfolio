@@ -39,8 +39,6 @@ $(document).ready(function () {
             label: 'JavaScript (JSON)',
             links: [
                 ['tabla-facturas-json', 'Tabla facturas']
-                // ['theadventuretraveller','The Adventure Traveller'], 
-                // ['carehome-app-test', 'Carehome App']
             ]
         },
     ]
@@ -54,11 +52,6 @@ $(document).ready(function () {
         o1['links'].forEach((o2, j) => {
 
             let state = j === 0 ? 'active' : '';
-
-            // let link =  i < 3 ? `https://amartin78.github.io/fcc-${o2}` 
-            //                   : i < 5 ? `https://${o2[0]}.glitch.me` 
-            //                           : `https:${o2[0]}`;
-
             let link =  i < 3 ? `https://amartin78.github.io/fcc-${o2}` 
                               : i < 5 ? `https://${o2[0]}.glitch.me` 
                                       : `https://amartin78.github.io/${o2[0]}`;
@@ -68,8 +61,6 @@ $(document).ready(function () {
             let img2 = `img-${j+1}.png`
             img = (i === 10 && j === 0) ? `${img1}sm/${img2}`
                                        : `${img1}${img2}`
-
-            // console.log('img ', img)
 
             c +=    `<div class="carousel-item ${state}">` +
                         `<a href="${link}/" target="_blank">` + 
@@ -98,9 +89,4 @@ $(document).ready(function () {
         $('.carousel').carousel({interval: false});
     });
 });
-
-
-
-
-
 
