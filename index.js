@@ -35,8 +35,8 @@ $(document).ready(function () {
             ]
         },
         {
-            route: 'other',
-            label: 'Other Projects',
+            route: 'json',
+            label: 'JavaScript (JSON)',
             links: [
                 ['tabla-facturas-json', 'Tabla facturas']
                 // ['theadventuretraveller','The Adventure Traveller'], 
@@ -77,7 +77,7 @@ $(document).ready(function () {
                         `<p>${o1['label']}</p>` +
                     `</div>`;
 
-        if (i !== 4) {
+        if (i !== 4 || i !== 5) {
             c   +=      `<a class="carousel-control-prev" href="#carouselSlide${i+1}" role="button" data-slide="prev">` +
                             `<span class="carousel-control-prev-icon" aria-hidden="true"></span>` +
                             `<span class="sr-only">Previous</span>` +
