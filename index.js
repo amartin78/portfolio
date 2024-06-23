@@ -85,7 +85,7 @@ $(document).ready(function () {
                     `</div>`
         }
     
-        $('#projects').append(c);
+        $('#proyectos').append(c);
         $('.carousel').carousel({interval: false});
     });
 });
